@@ -27,12 +27,21 @@ $(document).ready(function(){
         // Fire off the request to /form.php
 
         console.log("serializedData", serializedData)
-
         
         request = $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbxSdcAHEgCH1TyPFyu_UCtbt7YBI01z-wjMafRbfuv8cSTdIEXL/exec",
+            url: "//script.google.com/macros/s/AKfycbxSdcAHEgCH1TyPFyu_UCtbt7YBI01z-wjMafRbfuv8cSTdIEXL/exec",
             type: "post",
-            data: serializedData
+            dataType: 'jsonp',
+            data: serializedData,//{TimeStamp: new Date()},
+            crossDomain: true,
+            xhrFields: {
+                withCredentials: false 
+            },
+            headers: {
+                "Accept" : "application/json; charset=utf-8",
+                "Content-Type": "application/javascript; charset=utf-8",
+                "Access-Control-Allow-Origin" : "*"
+            } 
         });
 
         // Callback handler that will be called on success
