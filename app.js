@@ -1,7 +1,7 @@
 $("#login").show();
 $("#app").hide();
 // Authenticate with Dropbox
-var client = new Dropbox.Client({key: "yourAppKey"});
+var client = new Dropbox.Client({key: "pt4od8cpggu10ql "});
 client.authenticate({interactive: false}, function (error) {
     if (error) {
         alert('Authentication error: ' + error);
