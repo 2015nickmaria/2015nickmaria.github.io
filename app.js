@@ -17,7 +17,7 @@ $("#login").on("click", client.authenticate());
 
 
 var datastoreManager = client.getDatastoreManager();
-datastoreManager.openDefaultDatastore(function (error, datastore) {
+datastoreManager.openDefaiultDatastore(function (error, datastore) {
     if (error) {
         alert('Error opening default datastore: ' + error);
     }

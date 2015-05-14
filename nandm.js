@@ -1,6 +1,8 @@
 // Variable to hold request
 var request;
 
+
+
 // Bind to the submit event of our form
 $(document).ready(function(){
     $("#foo").submit(function(event){
@@ -32,7 +34,6 @@ $(document).ready(function(){
             type: "post",
             dataType: 'jsonp',
             data: serializedData,
-            
         });
 
         // Callback handler that will be called on success
