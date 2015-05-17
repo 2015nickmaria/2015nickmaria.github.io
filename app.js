@@ -121,4 +121,7 @@ app.get('/invoice/:mail', function(req,res){
         });
 })
 
-app.listen(3030);
+//app.listen(3030);
+app.listen(process.env.PORT || 3030, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
