@@ -1,9 +1,10 @@
 //We're using the express framework and the mailgun-js wrapper
 var express = require('express');
-var Mailgun = require('mailgun-js');
 //init express
 var app = express();
+app.use(express.static(__dirname + '/js'));
 
+var Mailgun = require('mailgun-js');
 
 //Your api key, from Mailgun’s Control Panel
 var api_key = 'key-0c526ada06020fdf5a520a0de9dc7db4';
@@ -15,7 +16,7 @@ var domain = 'krat.nz';
 var from_who = 'johnstonenatalie@gmail.com';
 
 //Tell express to fetch files from the /js directory
-app.use(express.static(__dirname + '/js'));
+
 //We're using the Jade templating language because it's fast and neat
 app.set('view engine', 'jade')
 
