@@ -13,7 +13,7 @@ var api_key = 'key-0c526ada06020fdf5a520a0de9dc7db4';
 var domain = 'krat.nz';
 
 //Your sending email address
-var from_who = 'johnstonenatalie@gmail.com';
+var from_who = 'postmaster@krat.nz';
 
 //Tell express to fetch files from the /js directory
 
