@@ -4,6 +4,7 @@ var express = require('express');
 var app = express();
 app.use(express.static(__dirname + '/js'));
 
+app.use("/styles", express.static(__dirname + '/styles'));
 var Mailgun = require('mailgun-js');
 
 //Your api key, from Mailgun’s Control Panel
@@ -14,6 +15,8 @@ var domain = 'krat.nz';
 
 //Your sending email address
 var from_who = 'postmaster@krat.nz';
+
+var to_who = 'johnstonenatalie@gmail.com';
 
 //Tell express to fetch files from the /js directory
 
@@ -49,7 +52,7 @@ app.get('/submit/:mail', function(req,res) {
     //The email to contact
       to: req.params.mail,
     //Subject and text data  
-      subject: 'Hello from Mailgun',
+      subject: 'Wedding RSVP',
       html: 'Hello, This is not a plain-text email, I wanted to test some spicy Mailgun sauce in NodeJS! <a href="http://0.0.0.0:3030/validate?' + req.params.mail + '">Click here to add your email address to a mailing list</a>'
     }
 
