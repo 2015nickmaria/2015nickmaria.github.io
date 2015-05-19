@@ -4,24 +4,31 @@ html
         title
             | Nick + Maria    
         link(rel='stylesheet', href='/styles/main.css')
+        link(rel='img', href='/styles/main.css')
+        meta(name="viewport" content="width=320")
+
     body
         #container
-            h3 Nick + Maria
+            img.bird(src="styles/img/bird-one.png")
+            img.title(src="styles/img/title.png")
+            img.bird(src="styles/img/bird-two.png")
+            
             form(id="mgform")
-                label(for="mail") Email:
-                input(type="text" id="mail" )
-                label(for="name") Name:
+                img.namelabel(src="styles/img/name-label.png")
                 input(type="text" id="name")
-                label Attending:
+                img.attendinglabel(src="styles/img/attending-label.png")
                 br
                 input(type="radio" id="yeah") 
-                label(for="yeah") Yeah
+                img.yeahlabel(src="styles/img/yeah-label.png")
                 input(type="radio" id="nah") 
-                label(for="yeah") Nah
+                img.nahlabel(src="styles/img/nah-label.png")
                 br
-                label(for="name") Dance Floor Music Requests:
+                br
+                img.songlabel(src="styles/img/song-label.png")
+                img.requestlabel(src="styles/img/request-label.png")
+                
                 input(type="text" id="music")
-                label(for="name") Comments:
+                img.commentslabel(src="styles/img/comments-label.png")
                 textarea(id="comments")
                 button(value="bulk" onclick="mgform.hid=this.value") Submit
         

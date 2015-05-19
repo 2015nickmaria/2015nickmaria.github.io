@@ -1,12 +1,10 @@
 body
 {
-    background: #F0EEE9;
 }
 
 h3
 {
     text-align: center;
-    color: #9EBCD0;
 }
 
 #container
@@ -15,9 +13,75 @@ h3
     margin: auto;
 }
 
-#container label
+#container .title
 {
-    color: #F0B7BC;
+    display: inline-block;
+    width: 200px;
+}
+
+#container .bird
+{
+    display: inline-block;
+    padding-bottom: 21px;
+    width: 40px;
+}
+
+#container .namelabel
+{
+    width: 65px; 
+    padding-top: 20px;
+}
+
+
+#container .songlabel
+{
+    width: 40px;
+}
+
+#container .requestlabel
+{
+    width: 56px;
+    margin-bottom: -2px;
+}
+
+#container .commentslabel
+{
+    width: 94px;
+}
+
+#container .attendinglabel
+{
+    width: 94px;
+}
+
+#container .yeahlabel
+{
+    width: 50px;
+    padding: 0 15px 0 10px;
+    margin-bottom: -11px;
+}
+
+#container .nahlabel
+{
+    width: 40px;
+    padding: 0 5px 0 10px;
+    margin-bottom: -6px;
+
+}
+
+#container input 
+{
+    margin: 5px 0 15px;
+}
+
+#container input[type=radio]
+{
+    margin: 5px 0;
+}
+
+#container textarea 
+{
+    margin: 5px 0 15px;
 }
 
 #container input[type=text]
@@ -34,12 +98,11 @@ h3
     margin: 10px 0;
     width: 100%;
     display: block;
-    background: #EAC442;
+    background: #F8E55C;
     border: none;
     padding: 10px;
     border-radius: 3px;
     font-size: 15px;
-    color: white;
     font-weight: bold;
 }
 
@@ -57,7 +120,7 @@ h3
 }
 
 .yellows {
-    color: #EAC442;
+    color: #F8E55C;
 }
 
 .blues {

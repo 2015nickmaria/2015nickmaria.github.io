@@ -5,6 +5,7 @@ var app = express();
 app.use(express.static(__dirname + '/js'));
 
 app.use("/styles", express.static(__dirname + '/styles'));
+
 var Mailgun = require('mailgun-js');
 
 //Your api key, from Mailgun’s Control Panel
@@ -50,10 +51,10 @@ app.get('/submit/:mail', function(req,res) {
     //Specify email data
       from: from_who,
     //The email to contact
-      to: req.params.mail,
+      to: to_who,//req.params.mail,
     //Subject and text data  
       subject: 'Wedding RSVP',
-      html: 'Hello, This is not a plain-text email, I wanted to test some spicy Mailgun sauce in NodeJS! <a href="http://0.0.0.0:3030/validate?' + req.params.mail + '">Click here to add your email address to a mailing list</a>'
+      html: '<h3>Hey Nick and Maria</h3> Name: ' + req.params.name + ' <br /> Song Request: ' + req.params.music + ' <br /> Comments: ' + req.params.comments +' <br /> Yeah: ' + req.params.yeah + ' <br /> Nah: ' + req.params.nah +  'This is not a plain-text email, I wanted to test some spicy Mailgun sauce in NodeJS!'
     }
 
     //Invokes the method to send emails given the above data with the helper library
