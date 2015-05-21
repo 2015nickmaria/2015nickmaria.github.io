@@ -13,23 +13,24 @@ html
             img.title(src="styles/img/title.png")
             img.bird(src="styles/img/bird-two.png")
             
-            form(id="mgform")
+            form(id="mgform" method="post" action="submit")
                 img.namelabel(src="styles/img/name-label.png")
-                input(type="text" id="name")
+                input(type="text" id="name" name="name")
                 img.attendinglabel(src="styles/img/attending-label.png")
                 br
-                input(type="radio" id="yeah") 
+                input(type="radio" id="yeah" name="attending" value="yeah" checked=true) 
                 img.yeahlabel(src="styles/img/yeah-label.png")
-                input(type="radio" id="nah") 
+                input(type="radio" id="nah" name="attending" value="nah") 
                 img.nahlabel(src="styles/img/nah-label.png")
                 br
                 br
                 img.songlabel(src="styles/img/song-label.png")
                 img.requestlabel(src="styles/img/request-label.png")
-                
-                input(type="text" id="music")
+                input(type="text" id="music" name="music")
                 img.commentslabel(src="styles/img/comments-label.png")
-                textarea(id="comments")
-                button(value="bulk" onclick="mgform.hid=this.value") Submit
+                textarea(id="comments" name="comments")
+                input(type="submit" value="Submit")
+                
+                //- button(value="bulk" onclick="mgform.hid=this.value") Submit
         
-        script(type="text/javascript" src="main.js")
+        //- script(type="text/javascript" src="main.js")
