@@ -11,7 +11,12 @@ html
         #container
             img.bird(src="styles/img/bird-one.png")
             img.title(src="styles/img/title.png")
+            img.title-s(src="styles/img/the-s.png")
             img.bird(src="styles/img/bird-two.png")
+            .weddingbox
+                img.weddinglabel(src="styles/img/wedding-label.png")
+                
+            .messagebox
             
             form(id="mgform" method="post" action="submit")
                 img.namelabel(src="styles/img/name-label.png")
@@ -28,9 +33,5 @@ html
                 img.requestlabel(src="styles/img/request-label.png")
                 input(type="text" id="music" name="music")
                 img.commentslabel(src="styles/img/comments-label.png")
-                textarea(id="comments" name="comments")
-                input(type="submit" value="Submit")
-                
-                //- button(value="bulk" onclick="mgform.hid=this.value") Submit
-        
-        //- script(type="text/javascript" src="main.js")
+                textarea(id="comments" rows="3" name="comments")
+                input.submitbutton(type="submit" value="Submit")

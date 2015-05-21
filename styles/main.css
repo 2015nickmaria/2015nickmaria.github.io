@@ -7,6 +7,11 @@ h3
     text-align: center;
 }
 
+#container .submitbutton
+{
+    
+}
+
 #container
 {
     width: 300px;
@@ -16,7 +21,13 @@ h3
 #container .title
 {
     display: inline-block;
-    width: 200px;
+    width: 180px;
+}
+
+#container .title-s {
+  width: 30px;
+  padding-bottom: 9px;
+  padding-right: 10px;
 }
 
 #container .bird
@@ -24,6 +35,16 @@ h3
     display: inline-block;
     padding-bottom: 21px;
     width: 40px;
+}
+
+#container .weddingbox
+{
+    text-align: center;
+}
+
+#container .weddingbox .weddinglabel
+{
+    width: 210px;
 }
 
 #container .namelabel
@@ -129,4 +150,10 @@ h3
 
 .whites {
     color: #F0EEE9; /* #E4E2DA #E0DDD3 */
+}
+
+
+#submitted
+{
+    text-align: center;
 }
