@@ -16,7 +16,7 @@ html
             .weddingbox
                 img.weddinglabel(src="styles/img/wedding-label.png")
                 
-            .messagebox
+            .messagebox 
             
             form(id="mgform" method="post" action="submit")
                 img.namelabel(src="styles/img/name-label.png")
@@ -34,4 +34,8 @@ html
                 input(type="text" id="music" name="music")
                 img.commentslabel(src="styles/img/comments-label.png")
                 textarea(id="comments" rows="3" name="comments")
-                input.submitbutton(type="submit" value="Submit")
+                
+                button.submitbutton(type="submit") 
+                    img.submitlabel(src="styles/img/submit-label.png")
+                
+            

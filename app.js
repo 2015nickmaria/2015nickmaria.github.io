@@ -23,7 +23,7 @@ var domain = 'krat.nz';
 //Your sending email address
 var from_who = 'postmaster@krat.nz';
 
-var to_who = 'johnstonenatalie@gmail.com';
+var to_who = '2015nickmaria@gmail.com';
 
 //Tell express to fetch files from the /js directory
 
