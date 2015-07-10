@@ -19,22 +19,22 @@ html
             .messagebox 
             
             form(id="mgform" method="post" action="submit")
-                img.namelabel(src="styles/img/name-label.png")
+                label Your Name(s):
                 input(type="text" id="name" name="name")
-                img.attendinglabel(src="styles/img/attending-label.png")
+                label Attending:
                 br
                 input(type="radio" id="yeah" name="attending" value="yeah" checked=true) 
-                img.yeahlabel(src="styles/img/yeah-label.png")
+                label.padding-left Yeah 
                 input(type="radio" id="nah" name="attending" value="nah") 
-                img.nahlabel(src="styles/img/nah-label.png")
+                label.padding-left Nah
                 br
                 br
-                img.songlabel(src="styles/img/song-label.png")
-                img.requestlabel(src="styles/img/request-label.png")
+                label Song Request:
                 input(type="text" id="music" name="music")
-                img.commentslabel(src="styles/img/comments-label.png")
+                label Comments:
+                label.sub (dietary requirements, apoogies)
                 textarea(id="comments" rows="3" name="comments")
-                
+                label.bottom-message Please note that while our reception is for adults only, children are welcome to attend the ceremony.
                 button.submitbutton(type="submit") 
                     img.submitlabel(src="styles/img/submit-label.png")
                 
